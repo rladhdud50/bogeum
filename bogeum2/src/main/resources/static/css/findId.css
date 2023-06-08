@@ -1,0 +1,138 @@
+#findIdbox {
+    width : 800px;
+    height: 450px;    
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    border-radius: 20px;    
+    font-family: 'Jua', sans-serif;
+
+}
+    #loginpart1{
+        width : 50%;
+        height: 100%;
+        background-color: rgb(253, 232, 175);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 5px rgb(253, 232, 175) solid;
+    }
+        #loginimgbox{
+            width : 70%;
+            height: 60%;            
+            margin: auto;
+            margin-top: 100px;
+        }
+        #loginimgbox img{ 
+            width: 100%;
+            height: 100%;
+           
+        }
+        
+#findIdpart{
+    width : 400px;
+    height: 100%;
+    border: 5px rgb(253, 232, 175) solid;  
+    border-left: none;  
+    border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+}
+
+#findIdpart #findtitle {
+    font-size: 45px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;    
+}
+	.inputbox  {	
+	height : 38px;
+	margin-bottom : 10px;	
+	border : 1px solid black;
+	border-radius: 10px;
+	}
+    .logininput {
+        width : 310px;
+        height: 90px;        
+        margin : auto;
+    }
+    #findIdpart input {
+       width : 290px;
+        height: 35px;
+        margin-left : 10px;  
+        margin-top : 2px;   
+        font-size: 18px;     
+        border : none;   
+        outline : none;
+    }
+    #findinfo {
+        width : 290px;
+        margin-top : 10px;
+        margin-left: 45px;
+        margin-bottom: 15px;        
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #searchbutton1 {
+        width : 300px;
+        margin: auto;        
+    }
+    #searchbutton1 button {
+        width : 300px;
+        background-color: black;
+        color: white;
+        margin-bottom: 10px;
+        margin-top : 10px;
+        height: 45px;
+        font-size: 25px;
+        font-family: 'Jua', sans-serif;   
+        border-radius: 10px;     
+    }
+    #searchbutton1 button:hover {
+        cursor: pointer;
+    }
+    
+ 	.searchresult { 		
+ 	height : 100px; 	
+ 	margin : auto;
+ 	margin-top : 20px;
+ 	font-size : 40px;
+ 	text-align : center;
+ 	}   
+ 	
+ #btn-find {
+ 	 width : 300px;
+        background-color: black;
+        color: white;
+        margin-left : 45px;
+        margin-top : 10px;
+        margin-bottom: 10px;        
+        height: 45px;
+        font-size: 25px;
+        font-family: 'Jua', sans-serif;   
+        border-radius: 10px;    
+ }
+    #btn-find:hover{
+    cursor : pointer;
+    }
+    
+/*모바일화면*/
+@media ( min-width : 0px) and (max-width: 1050px) {
+
+	#findIdbox {  
+	width : 400px;      
+    margin: auto;
+    margin-top: 200px;  
+}
+		
+	#loginpart1 {
+		display : none;
+	}
+	#findIdpart {
+		border : 5px rgb(253, 232, 175) solid; 
+		border-radius : 20px;
+	}
+	
+}    
+    
+    

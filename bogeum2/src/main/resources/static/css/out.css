@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container {
+	width: 100%;
+}
+
+#maincontent #contentbox {
+	width: 85%;
+	margin: auto;
+}
+
+
+#maincontent #contentbox #outbox {
+	width: 800px;
+	height: 700px;
+	 font-family: 'GmarketSansMedium';
+	 margin : auto;	
+}
+
+#contentbox #outbox #outtitle {
+	margin-bottom: 50px;
+	height: 38px;
+	font-size: 40px;
+	border-bottom: 2px solid black;
+	line-height: 40px;
+	height: 50px;
+}
+
+#contentbox #outbox #outdetailbox {
+	margin-bottom: 10px;
+	height: 37%;
+	border: 2px solid gray;
+}
+
+#outdetail {
+	width: 95%;
+	height: 90%;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#outdetail #outdetailwarn {
+	margin-bottom: 15px;
+	font-size: 17px;
+	line-height: 23px;
+	color: rgb(235, 62, 62);
+}
+
+#outdetail #outdetailcontent {
+	line-height: 22px;
+}
+
+#contentbox #outbox #outwarn {
+	height: 25%;
+	margin-bottom: 10px;
+}
+
+#outwarn #outwarntitle {
+	height: 20%;
+	width: 100%;
+	font-size: 22px;
+	margin-top: 30px;
+}
+
+#outwarn #outwarncontent {
+	height: 75%;
+	border: 2px solid gray;
+}
+
+#outwarn #outwarncontent ul {
+	width: 95%;
+	margin: auto;
+	margin-top: 25px;
+	font-size: 17px;
+	line-height: 25px;
+	color: gray;
+}
+
+#contentbox #outbox #outreason {
+	height: 10%;
+	margin-bottom: 10px;	
+}
+
+#outreason #outreasontitle {
+	height: 20%;
+	width: 100%;
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#outreason select {
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+}
+
+#outcheckbox {
+	width: 100%;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+#contentbox #outbox #outbutton {
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#outbutton button {
+	width: 200px;
+	height: 45px;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	font-family: 'Jua', sans-serif;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#outbutton button:hover {
+	cursor: pointer;
+}
+
+/*모바일페이지*/
+@media ( min-width : 0px) and (max-width: 1050px) {
+	#maincontent #contentbox #outbox {
+		width: 100%;
+		height : 800px;		
+	}
+	#maincontent #contentbox #outbox>div {
+		margin-bottom : 10px;
+	}
+	#contentbox #outbox #outdetailbox {
+		height: 50%;
+	}
+	#contentbox #outbox #outwarn {
+		height: 250px;
+		margin-bottom: 10px;
+		
+	}
+	#outwarn #outwarntitle {
+	height : 30px;	
+	}
+	#outwarn #outwarncontent {
+		
+	}
+	#outreason #outreasontitle {
+		margin-top : 5px;
+	
+	}
+	
+}

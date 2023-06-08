@@ -1,0 +1,129 @@
+
+#loginbox {
+    width : 800px;
+    height: 450px;    
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    border-radius: 20px;    
+    font-family: 'Jua', sans-serif;
+
+}
+    #loginpart1{
+        width : 50%;
+        height: 100%;
+        background-color: rgb(253, 232, 175);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 5px rgb(253, 232, 175) solid;
+    }
+        #loginimgbox{
+            width : 70%;
+            height: 60%;            
+            margin: auto;
+            margin-top: 100px;
+        }
+        #loginimgbox img{ 
+            width: 100%;
+            height: 100%;
+           
+        }
+#loginpart2{
+    width : 392px;
+    height: 100%;
+    border: 5px rgb(253, 232, 175) solid;  
+    border-left: none;  
+    border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+}
+
+#loginpart2 #logintitle {
+    font-size: 45px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    text-align: center;    
+}
+	.inputbox  {	
+	height : 38px;
+	margin-bottom : 10px;	
+	border : 1px solid black;
+	border-radius: 10px;
+	}
+    .logininput {
+        width : 310px;                
+        margin : auto;
+        
+        
+    }
+    #loginpart2 input {
+        width : 290px;
+        height: 35px;
+        margin-left : 10px;  
+        margin-top : 2px;   
+        font-size: 18px;     
+        border : none;   
+        outline : none;
+        
+    }
+    #findinfo {
+         width : 290px;
+        margin-top : 10px;
+        margin-left: 45px;
+        margin-bottom: 15px;        
+        display: flex;
+        justify-content: space-between;
+    }
+    #loginbutton1 {
+        width : 300px;
+        margin: auto;
+    }
+    #loginpart2 button {
+        width : 300px;
+        background-color: black;
+        color: white;
+        margin-bottom: 10px;
+         margin-top : 10px;
+        height: 45px;
+        font-size: 25px;
+        font-family: 'Jua', sans-serif;   
+        border-radius: 10px; 
+           
+    }
+    #loginpart2 button:hover {
+        cursor: pointer;
+    }
+    #kakaologin {
+        width : 300px;
+        height: 45px;
+        margin: auto;
+    }
+    #loginpart2 img {
+        width : 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    #or {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+/*모바일화면*/
+@media ( min-width : 0px) and (max-width: 1050px) {
+
+	#loginbox {  
+	width : 400px;      
+    margin: auto;
+    margin-top: 200px;  
+}
+		
+	#loginpart1 {
+		display : none;
+	}
+	#loginpart2 {
+		border : 5px rgb(253, 232, 175) solid; 
+		border-radius : 20px;
+	}
+	
+}    

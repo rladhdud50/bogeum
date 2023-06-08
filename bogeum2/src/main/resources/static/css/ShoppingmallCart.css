@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#Shop_Basket_wrap{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+/* 장바구니 비었을때*/
+.empty_cart{
+	 width: 100%;
+	 height: 150px;
+	 text-align: center;
+	 font-family: 'GmarketSansMedium';
+}
+.empty_cart>p:first-child{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.empty_cart>p:nth-child(2){
+	margin-bottom: 30px;
+}
+.go_shop{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	background-color: #F9AC3A;
+	border-radius:10px;
+	font-size: 24px;
+	color: white;
+	font-family: 'Jua', sans-serif;
+}
+/* 장바구니 아이템 리스트*/
+.basket_list_box{
+    width: 100%;
+    height: auto;
+}
+.basket_list_ul{
+    width: 100%;
+    height: auto;
+}
+.basket_list_li{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    font-family: 'GmarketSansMedium';
+}
+.basketAbox{	/*a태그*/
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+.pic_check_box{
+    width: 3%;
+    height: 100%;
+}
+.pic_check_box>input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+    margin-top: 100px;
+}
+.basket_list_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.basket_picture{
+    width: 50%;
+    height: 100%;
+}
+.Basket_item_img{
+    width: 90%;
+    height: 90%;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+.Basket_item_img>img{
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 10px;
+}
+.basket_item_name{
+    width: 50%;
+    height: 100%;
+}
+.Basket_item_subnames{
+    width: 100%;
+    height: 100%;
+}
+.Basket_item_subnames>p{
+	padding-top: 50px;
+    font-size: 30px;
+}
+.Basket_item_subprice{
+    width: 100%;
+    height: 50%;
+}
+.Basket_item_subprice>p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.basket_list_info2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.basket_amount, .basket_price, .basket_delete{
+    width: 30%;
+    height: 100%;
+}
+.basket_price{
+	width: 40%;
+    height: 100%;
+}
+.goods_count_btn{
+    width: 100%;
+    height: 100%;
+}
+.goods_count_btn>button{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #828282;
+	border-radius: 15px;
+	background-color: white;
+	font-size: 25px;
+	margin-top: 60px;
+}
+.goods_count_btn>input[type=text]{
+    width: 50px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+}
+.basket_price>p{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 30px;
+}
+.basket_delete>a>i{
+    margin-left: 70px;
+    padding-top: 50px;
+    font-size: 40px; 
+    color: #F9AC3A;
+}
+/* 결제 */
+.basket_pay_box{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: 50px;
+}
+.payment_price_box{
+    width: 70%;
+    height: 100%;
+}
+.payment_price_box>p{
+	margin-top: 15px;
+    font-size: 40px; 
+    font-family: 'GmarketSansMedium';
+}
+.pay_now{
+    width: 30%;
+    height: 100%;
+}
+.pay_now>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: #F9AC3A;
+	border-radius:10px;
+	font-size: 25px;
+	color: white;
+	
+}
+.pay_now>a>button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #F9AC3A;
+	border-radius:10px;
+	font-size: 35px;
+	color: white;
+	font-family: 'Jua', sans-serif;
+}
+@media all and (max-width:1024px){
+	#Shop_Basket_wrap{
+	    width: 90%;
+	    height: auto;
+	    margin: 0 auto;
+	    margin-top: 50px;
+	    margin-bottom: 150px;
+	    font-family: 'Jua', sans-serif;
+	}
+	/* 장바구니 아이템 리스트*/
+	.Basket_item_subnames>p{
+		font-size: 30px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+	}
+	.basket_list_info2{
+		display: grid;
+		width: 50%;
+		height: 100%;
+		grid-template-areas:
+			"amount delete"
+			"price price";
+		justify-content: center;
+	}
+	.basket_amount{
+		grid-area:amount;
+    	width:100%;
+	}
+	.basket_price{
+		grid-area:price;
+		width:100%;
+	}
+	.basket_delete{
+		grid-area:delete;
+    	width:100%;
+	}
+	.goods_count_btn>button{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #828282;
+		border-radius: 15px;
+		background-color: white;
+		font-size: 25px;
+		margin-top: 60px;
+	}
+	.goods_count_btn>input[type=text]{
+	    width: 40px;
+	    height: 30px;
+	    border: none;
+	    text-align: center;
+	    outline: none;
+	    font-size: 20px;
+	}
+	.basket_price>p{
+		text-align: right;
+	    padding-top: 15px;
+	}
+	/* 결제 */
+	.basket_pay_box{
+	    width: 100%;
+	    height: 100px;
+	    display: inline-block;
+	    margin-top: 30px;
+	}
+	.payment_price_box{
+	    width: 100%;
+	    height: 40%;
+	    margin-bottom: 30px;
+	}
+	.pay_now{
+	    width: 100%;
+	    height: 60%;
+	}
+	.payment_price_box>p{
+		margin-top: 0;
+	    font-size: 30px; 
+	}
+	.pay_now>a{	
+		font-size: 30px;
+		color: white;
+	}
+}

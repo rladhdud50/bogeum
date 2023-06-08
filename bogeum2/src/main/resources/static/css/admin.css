@@ -1,0 +1,159 @@
+/*.header {*/
+/*  padding-top: 20px;  */
+/*  width : 100%;*/
+/*  height: 150px;*/
+/*  background-color: antiquewhite;  */
+/*}*/
+/*.footer {*/
+/*  width : 100%;*/
+/*  height: 100px;*/
+/*  background-color: rgb(235, 235, 235); */
+/*}*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.admin-container {
+  width: 1200px;
+  margin : auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  /* border: 1px solid darkblue; */
+  /* height: 600px; */   
+}
+.manage-menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.manage-menu li {
+  /* border: 1px solid #ccc; */
+  padding: 20px 50px;
+  font-size: 30px;    
+}
+.manage-menu li a{ 
+  padding: 10px;
+}
+.manage-menu li a:hover {
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.active {
+  /* font-weight: bold; */
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+#products, #orders, #sales {
+  display: none;
+}
+.tab-content {
+  margin-top: 50px;
+}
+table {
+  margin:0 auto;
+  width: 80%;
+}
+thead, td {
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+table td {
+  text-align: center;
+}
+tbody tr:hover {
+  background-color: aliceblue;
+}
+td{
+	font-family: 'GmarketSansMedium';
+}
+#chart_div {
+  /* width: 10%; */
+  
+}
+
+/* !!!페이징!!!*/
+.page_wrap {
+  margin-top: 40px;
+  text-align:center;
+  font-size:0;
+  /* padding-right: 110px; */
+ }
+.page_nation {
+  display:inline-block;
+}
+.page_nation .none {
+  display:none;
+}
+.page_nation a {
+  display:block;
+  margin:0 3px;
+  float:left;
+  border:1px solid #e6e6e6;
+  width:28px;
+  height:28px;
+  line-height:28px;
+  text-align:center;
+  background-color:#fff;
+  font-size:13px;
+  color:#999999;
+  text-decoration:none;
+}
+.page_nation .arrow {
+  border:1px solid #ccc;
+}
+.page_nation .pprev {
+  background:#f8f8f8 url('/img/page_pprev.png') no-repeat center center;
+  margin-left:0;
+}
+.page_nation .prev {
+  background:#f8f8f8 url('/img/page_prev.png') no-repeat center center;
+  margin-right:7px;
+}
+.page_nation .next {
+  background:#f8f8f8 url('/img/page_next.png') no-repeat center center;
+  margin-left:7px;
+}
+.page_nation .nnext {
+  background:#f8f8f8 url('/img/page_nnext.png') no-repeat center center;
+  margin-right:0;
+}
+.page_nation a.active {
+  background-color:#ffebb6;
+  color:#fff;
+  /* border:1px solid #42454c; */
+}
+
+.admin-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-family: "Jua";
+  font-size: 16px;
+}
+/*상품등록 버튼*/
+.update_box{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.update_box>button{
+	width: 20%;
+	height: 50px;
+	border: none;
+	border-radius: 10px;
+	font-size: 25px;
+	background-color: #FF8868;
+	color: white;
+}
+.search-input{
+	width: 80%;
+	margin: 0 auto;
+}

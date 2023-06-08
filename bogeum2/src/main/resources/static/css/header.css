@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#main_container{
+    width: 100%;
+    height:auto;
+     background: white;
+}
+
+a{
+    text-decoration: none;
+}
+.logo2>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+a>img{
+	width: 100%;
+	height: 100%;
+}
+.sub_package>ul{
+    display: flex;
+}
+.sub_package>ul>li{
+    padding-left: 30px;
+    color: black;
+    font-family: 'GmarketSansMedium';
+    font-size: 12px;
+}
+.sub_package>ul>li>a:visited{
+    color: black;
+}
+#middle {   /*중간 큰박스*/
+    width: 80%;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-bottom:20px;   
+}
+.middle_box{
+	margin-top:10px;
+    width: 13%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  	margin-right:5px;
+    transition: all 0.3s;
+    border-radius: 10px;
+  
+}
+.middle_box>a{
+    color: black;
+    display: inline-block;
+    height: 100%;
+    padding-top: 25px;
+    transition: all 0.3s;
+}
+
+#header_wrap {
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+}
+/* pc버전 */
+@media all and (min-width:1025px){
+	.sub_package{   /*로그인 회원가입은 모바일에서 사라짐*/
+        display: inline-block;
+    }
+    #top{
+        width: 100%;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        position: relative;      
+    }
+    .mobile_tap{
+        display: none;
+        
+    }
+    .logo2{
+    	position:absolute;
+    	left: 40px;
+    	top: 5px;
+		width: 120px;
+		height: 120px;
+    }
+    .logo2>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    }
+    .logo2>a>img{
+    	width: 100%;
+    height: 100%;
+    }
+    .sub_package{
+    position:absolute;
+    	right: 50px;
+    }
+   
+}
+/* 모바일버전 */
+@media all and (max-width:1024px){
+    .sub_package{   /*로그인 회원가입은 모바일에서 사라짐*/
+        display: none;
+    }
+    
+    #middle{    /*메뉴들 모바일에서 사라짐*/
+        display: none;
+    }
+    #top{
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(253, 232, 175);
+         
+    }
+    .logo2{
+        width: 130px;
+		height: 100px;
+    }
+    .logo2>a{
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+    }
+    .logo2>a>img{
+    	width: 100%;
+   		height: 100%;
+    }
+    input[id="menuicon"]{
+        display: none;
+    }
+    input[id="menuicon"] + label {
+        display: block;
+        margin: 30px;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    input[id="menuicon"] + label span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 30px;
+        background-color: #F9AC3A;
+        transition: all .35s;
+    }
+    input[id="menuicon"] + label span:nth-child(1) {
+        top:0;
+    }
+    input[id="menuicon"] + label span:nth-child(2) {    /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+        top:50%;transform:translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3) {
+        bottom:0;
+    }
+    input[id="menuicon"]:checked + label {
+        z-index:4;
+    }
+    input[id="menuicon"]:checked + label span {
+        background:#F9AC3A;
+    }
+    input[id="menuicon"]:checked + label span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    input[id="menuicon"]:checked + label span:nth-child(2) {
+        opacity:0;
+    }
+    input[id="menuicon"]:checked + label span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+    div[class="sidebar"] {
+        width:300px;
+        height:100%;
+        background:rgb(253, 232, 175);
+        position:fixed;
+        top:0;
+        right:-310px;
+        z-index:3;
+        transition:all .35s;
+        border: 5px solid #F9AC3A;
+        }
+    input[id="menuicon"]:checked + label + div {
+        right: 0;
+    }
+    .sidebar{
+        padding-top: 100px;
+        text-align: center;
+    }
+    .mobile_login{
+    	font-size: 1.5rem;
+        line-height: 2;
+        padding-bottom:20px;
+        border-bottom: 5px solid #F9AC3A;
+    }
+    .mobile_menu{
+        margin-top: 20px;
+        line-height: 2;
+        font-size: 2rem;
+    }
+    .mobile_menu>ul>li>a:visited{
+        color: white;
+    }
+    .mobile_login>ul>li>a:visited{
+        color: white;
+    }
+	#header_wrap {
+	   
+	  	border: none;
+	  
+	}
+}

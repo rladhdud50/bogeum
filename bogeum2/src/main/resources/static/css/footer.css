@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+footer {
+    width: 100%;
+    height: 350px;
+    margin-top: 200px;    
+}
+
+#footer1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer1item {
+    width: 30%;
+    height: 100%;
+    margin-right: 10px;
+    border-right: 2px solid rgb(206, 206, 206);
+}
+
+.footer1item:nth-child(3) {
+    border: none;
+}
+
+
+.footericon {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.footericon img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer1itemtitle {
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer1itemcontent1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FF8868;
+}
+
+.footer1itemcontent2 {
+    text-align: center;
+}
+
+
+#footer2 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(253, 232, 175);
+	
+}
+
+#footerbox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    line-height: 20px;
+    margin-left: 10%;
+}
+
+#footerlogo {
+    height: 150px;
+    width: 13%;
+    margin-right: 20px;
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+#footerlogo img {
+    width: 100%;
+    height: 100%;
+}
+
+#footer2content {
+    height: 150px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer1itemcontent1 {
+        display: none;
+    }
+
+    .footer1itemcontent2 {
+        display: none;
+    }
+
+    .footer1item {
+        height: 50%;
+    }
+    #footerlogo {
+        display: none;
+    }
+    #footerlogo img{
+        display: none;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}

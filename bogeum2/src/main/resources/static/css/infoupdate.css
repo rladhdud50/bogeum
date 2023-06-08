@@ -1,0 +1,166 @@
+
+
+#joinbox {
+	border: 1px black solid;
+	width: 800px;
+	height: 950px;
+	margin: auto;
+	font-family: 'GmarketSansMedium';
+	font-size: 20px;
+	font-size: 18px;
+}
+
+input {
+	width: 600px;
+	height: 35px;
+	border: none;
+	border-bottom: 1px gray solid;
+	outline: none;
+	font-size: 18px;
+	line-height: 10px;
+}
+
+#joinbox div {
+	width: 750px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+#joinbox div .error {
+	height: 10px;
+	font-size: 14px;
+}
+
+#joinbox button:hover {
+	cursor: pointer;
+}
+
+#joinbox .title {
+	width: 700px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 40px;
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+}
+
+.id button {
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.tel button {
+	width: 110px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+#address {
+	margin-bottom : -20px;
+}
+#detailaddress {
+	width: 600px;	
+}
+
+.signUpcheck {
+	margin-top: 30px;
+}
+
+#signUptitle {
+	font-size: 25px;
+}
+
+#signUpcontent {
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+.signUpcheck input {
+	width: 20px;
+	height: 15px;
+}
+
+.signUp {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;	
+}
+
+.signUp .updatebutton {
+	width: 200px;
+	height: 45px;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	font-family: 'Jua', sans-serif;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left : -30px;
+}
+
+.error {
+	font-size: 15px;
+	color: red;
+	margin-left: 0px;
+	padding-top: 0px;
+}
+
+#kakaomap {
+	display: none;
+}
+
+/*모바일페이지*/
+@media ( min-width : 0px) and (max-width: 1050px) {
+		
+	
+	.mypagenav {
+		display : none;
+	}	
+	.mypagecontentbox {
+		
+		width : 100%;
+		margin-bottom : 50px;
+		
+	}
+	input {
+		width: 90%;	
+		margin : auto;
+	}
+	#joinbox div {
+		width: 100%;	
+	}
+	#joinbox .title {
+		width: 80%;	
+	}
+	#joinbox {
+		width : 100%;	
+		
+	}
+	#detailaddress {
+		width: 90%;	
+	}
+	#joinbox div {
+		width : 90%;	
+		margin-left : 40px;
+	}
+	.signUp {	
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	
+}
+		
+}
+

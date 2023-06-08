@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Jua', sans-serif !important;
+}
+html {
+    font-size: 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.board_view_wrap {
+    font-family: 'GmarketSansMedium' !important;
+}
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title {
+    margin-bottom: 30px;
+}
+
+.board_title strong {
+    font-size: 5rem;
+}
+
+.board_title p {
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background: #000;
+    color: #fff;
+}
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 2rem;
+}
+
+.board_view .info {
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    font-size: 0;
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.board_view .info dl dt {
+
+}
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1000px) {
+    .board_wrap {
+        width: 100%;
+        min-width: 320px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .board_view .info dl {
+        width: 50%;
+        padding: 0;
+    }
+
+    .board_view .info dl:nth-child(-n+2) {
+        margin-bottom: 5px;
+    }
+
+    .board_view .info dl::before {
+        display: none;
+    }
+
+    .board_view .info dl dt,
+    .board_view .info dl dd {
+        font-size: 1.2rem;
+    }
+
+}
+/*button*/
+.btn {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ffebb6;
+    border-radius: 2px;
+    font-size: 2rem;
+    font-family: 'GmarketSansMedium' !important;
+    background-color: white;
+}
+.bt1{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ffebb6;
+    border-radius: 2px;
+    font-size: 2rem;
+    font-family: 'GmarketSansMedium' !important;;
+    background-color: #ffebb6;
+}
+.bt2{
+    background-color: #e65d5d;
+}
+
+
+/*Reply*/
+h5{
+    font-size: 2rem;
+}
+#reply_btn{
+    text-align: right;
+    padding-top: 10px;
+}
+
+#reply_content{
+    width: 100% !important;
+    height:80px !important;
+    border: #ffebb6 1px solid;
+    font-size: 1.8rem;
+}
+#reply_control{
+    margin-top: 3rem;
+    width: 100% !important;
+}
+.bt3 {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ffebb6;
+    border-radius: 2px;
+    background-color: #ffebb6;
+    font-size: 2rem;
+    font-family: 'GmarketSansMedium' !important;;
+}
+.first_col {
+    font-size: 1.8rem;
+    padding-top: 1.8rem;
+}
+.second_col {
+    font-size: 1.8rem;
+}
+.inquiry_title{
+    font-size: 1.8rem;
+}
+.swal2-popup{
+    font-size: 2rem !important;
+}
+#login{
+    font-size: 16px;
+
+}

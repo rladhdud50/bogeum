@@ -1,0 +1,35 @@
+
+#mobilesidenavbox {
+	
+	margin-bottom : 50px;
+	background-color : rgb(253, 232, 175);
+	color : gray;
+}
+
+#mobilesidenavli {
+	display : flex;
+	justify-content: space-around;
+	height : 40px;
+	color : gray;	
+	line-height : 40px;
+	text-align : center;
+}
+
+#mobilesidenavli li {
+	width : 100%;	
+}
+
+#mobilesidenavli li a {
+	color : gray;
+}
+
+.submenu {
+	background-color : rgb(253, 232, 175);
+	display : none;
+	opacity : 0.8;	
+}
+
+
+
+
+	

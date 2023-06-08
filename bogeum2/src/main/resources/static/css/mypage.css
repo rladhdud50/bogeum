@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	width: 80%;	
+	height : 1000px;
+	margin : auto;
+	margin-top: 60px;
+	margin-bottom: 150px;
+	display: flex;	
+}
+
+/*마이페이지 사이드네비*/
+.mypagenav {	
+	width: 200px;
+	height: 800px;
+	position: fixed;
+	margin-top : -10px;	
+}
+
+.mypagenavmenu {
+	margin-bottom: 20px;
+}
+
+.mypagenav li {	
+	color: gray;
+	font-size : 18px;
+}
+
+.mypagenav li a {
+	color: gray;
+}
+
+.mypagenavtitle {
+	font-size: 22px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+/* 마이페이지컨텐츠 */
+.mypagecontentbox {
+	width: 80%;
+	height: 1000px;
+	margin-left: 200px;	
+	
+}
+
+.mypagecontent {
+	width : 90%;
+	margin : auto;
+	margin-bottom: 80px;	
+}
+
+.mypagecontenttitle {
+	font-size: 30px;
+	border-bottom: 2px black solid;
+	margin-bottom: 20px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.myorder1 {
+	width: 100%;
+	height: 210px;
+	border: 1px black solid;
+}
+
+#orderprocess ul {
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px black solid;
+	padding-bottom: 20px;
+}
+
+#orderprocess ul li {
+	margin: auto;
+	text-align: center;
+}
+
+.ordercount {
+	font-size: 70px;
+	font-weight: 100;
+}
+
+.refundmenu {
+	display: flex;
+	justify-content: space-around;
+}
+
+.refundcontent {
+	margin-top: 18px;
+	font-size: 22px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	border-right: 1px gray solid;
+}
+
+.refundcontent:nth-child(3) {
+	border-right: none;
+}
+
+.myorder2nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+	margin-bottom: 10px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	height: 30px;
+	text-align: center;
+	align-items: center;
+}
+
+.myorder2content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+.orderdate {
+	width: 100px;
+}
+
+.myorderitem {
+	display: flex;
+	width: 300px;
+	align-items: center;
+	justify-content: center;
+}
+
+.itemimg {
+	width: 150px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.itemimg img {
+	width: 100%;
+	height: 100%;
+}
+
+.itemname {
+	width: 150px;
+	margin-left: 10px;
+}
+
+.orderprice {
+	width: 150px;
+}
+
+.deliveryprice {
+	width: 100px;
+}
+
+.confirm {
+	width: 100px;
+}
+
+.confirm button {
+	width: 70px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.confirm button:hover {
+	cursor: pointer;
+}
+
+#mobilesidenavbox {
+	display: none;
+}
+
+
+
+/*모바일페이지*/
+@media ( min-width : 0px) and (max-width: 1050px) {
+	#mobilesidenavbox {
+		display: block;
+	}
+	.container {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 100px;
+		
+	}
+	.mypagenav {
+		display: none;
+	}
+	.mypagecontentbox {
+		width: 100%;
+		margin: auto;
+		margin-left: 0px;
+		
+	}
+	#orderprocess ul {
+		width: 100%;
+	}
+	.ordercount {
+		font-size: 60px;
+	}
+	.myorder2nav {
+		font-size: 15px;
+		height: 30px;
+		border-top: 1px solid black;
+	}
+}
